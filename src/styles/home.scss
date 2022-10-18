@@ -1,0 +1,256 @@
+.home-container {
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+
+    img {
+        width: 10%;
+
+        @media screen and (max-width: 600px) {
+            width: 25%;
+        }
+    }
+
+}
+
+.nav-div {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.navigation-container {
+    @extend .header-div;
+    margin-top: 80px;
+}
+
+.navigation-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .nav-element {
+        height: 40px;
+        width: 40px;
+        border-radius: 50px;
+        border: 1px solid rgb(221, 216, 216);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-active {
+        background-color: #664DE5;
+        color: white;
+    }
+}
+
+.welcome-div {
+    margin-top: 90px;
+}
+
+.welcome-text {
+    text-align: center;
+    font-family: 'Inter-semibold';
+    font-size: 32px;
+    margin-bottom: 15px;
+    @media screen and (max-width: 375px) {
+        font-size: 17px;
+    }
+}
+
+.desc-text {
+    font-family: 'Inter-medium';
+    color: #848DA2;
+    text-align: center;
+    @media screen and (max-width: 375px) {
+        font-size: 14px;
+    }
+}
+
+.form-main-div {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-div {
+    width: 32%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @media screen and (max-width: 600px) {
+        width: 60%;
+    }
+
+    input {
+        margin-bottom: 15px;
+        height: 40px;
+        border: 0.5px solid gray;
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-family: 'Inter-medium';
+    }
+}
+
+.form-text {
+    font-family: 'Inter-semibold';
+    color: black;
+    opacity: 0.9;
+    margin-bottom: 10px;
+
+    span {
+        color: #DEE1E9;
+    }
+}
+
+button {
+    margin-top: 15px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 32%;
+    height: 45px;
+    border-radius: 5px;
+    color: white;
+    background-color: #664DE5;
+    border: none;
+    font-size: 15px;
+
+    @media screen and (max-width: 600px) {
+        width: 60%;
+    }
+}
+
+.url-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+
+    .url-text {
+        height: 40px;
+        border-radius: 5px;
+        border: 0.5px solid lightgray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-right-radius: 0px;
+        border-top-right-radius: 0px;
+        width: 40%;
+        background-color: #F8F9FC;
+        font-family: 'Inter-semibold';
+        color: gray;
+
+        @media screen and (max-width: 600px) {
+            width: 60%;
+            font-size: 12px;
+        }
+    }
+
+    input {
+        margin-bottom: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        width: 60%;
+        height: 39px;
+        border: 0.5px solid lightgray;
+    }
+}
+
+.plan-box-div {
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.plan-box {
+    width: 12%;
+    border: 0.5px solid lightgray;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
+    border-radius: 5px;
+
+    @media screen and (max-width: 600px) {
+        width: 30%;
+    }
+
+    img {
+        width: 30px;
+        margin-bottom: 20px;
+    }
+
+    .plan-head {
+        font-family: 'Inter-semibold';
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .plan-desc {
+        color: gray;
+        font-family: 'Inter-medium';
+    }
+}
+
+.active-plan-box {
+    border: 1px solid #664DE5;
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -30px;
+
+    @media screen and (max-width: 375px) {
+        margin-bottom: -45px;
+
+    }
+}
+
+.tick-div {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #664DE5;
+
+    img {
+        width: 16px
+    }
+}
+
+.welcome-div-finish {
+    margin-bottom: 40px;
+}
+
+.horizontal-line {
+    width: 30px;
+    border: 0.5px solid lightgray;
+}
+
+.line-active {
+    border: 0.5px solid #664DE5;
+}
+
+.error-msg {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
